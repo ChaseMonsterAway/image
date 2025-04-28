@@ -1,4 +1,4 @@
-FROM nvidia/cuda:12.4.0-devel-ubuntu22.04
+FROM nvidia/cuda:12.4.1-cudnn-devel-ubuntu22.04
 # FROM nvidia/cuda:12.6.0-cudnn-devel-ubuntu22.04
 # FROM nvidia/cuda:12.4.0-runtime-ubuntu22.04
 # FROM nvcr.io/nvidia/tritonserver:25.02-trtllm-python-py3
