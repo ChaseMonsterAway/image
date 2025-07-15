@@ -4,14 +4,14 @@
 # FROM nvcr.io/nvidia/tritonserver:25.02-trtllm-python-py3
 # FROM nvcr.io/nvidia/pytorch:25.01-py3
 # FROM paddlepaddle/paddle:3.0.0rc1-gpu-cuda11.8-cudnn8.6-trt8.5
-ARG UBUNTU_VERSION=22.04
-ARG NVIDIA_CUDA_VERSION=11.8.0
+
+ARG UBUNTU_VERSION=24.04
+ARG NVIDIA_CUDA_VERSION=12.6.1
 
 #
 # Docker builder stage.
 #
-# FROM nvidia/cuda:${NVIDIA_CUDA_VERSION}-devel-ubuntu${UBUNTU_VERSION} AS builder
-FROM nvidia/cuda:11.8.0-cudnn8-devel-ubuntu22.04 AS builder
+FROM nvidia/cuda:${NVIDIA_CUDA_VERSION}-devel-ubuntu${UBUNTU_VERSION} AS builder
 
 ARG COLMAP_GIT_COMMIT=main
 ARG CUDA_ARCHITECTURES=all-major
